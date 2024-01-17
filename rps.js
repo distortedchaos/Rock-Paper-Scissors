@@ -3,7 +3,6 @@ randumnumber = () => {
   randnum = Math.ceil(Math.random() * 3);
 };
 randumnumber();
-console.log(randnum);
 
 img1 = 1;
 img2 = 2;
@@ -18,14 +17,13 @@ rock.addEventListener("click", () => {
     if (randnum == 1) {
       draw.innerText = "It was a draw";
       randumnumber();
-      console.log(randnum);
     } else if (randnum == 2) {
       compscore++;
       console.log("Comp=" + compscore);
       comscore.innerText = compscore;
       draw.innerText = "Paper beats Rock";
       randumnumber();
-      console.log(randnum);
+
     }
    else if (randnum == 3) {
     urscore++;
@@ -33,7 +31,7 @@ rock.addEventListener("click", () => {
     yourscore.innerText = urscore;
     draw.innerText = "Rock beats Scissor";
     randumnumber();
-    console.log(randnum);
+
   }});
 
 let paper = document.querySelector(".img2");
@@ -43,21 +41,21 @@ paper.addEventListener(
       if (randnum == 2) {
         draw.innerText = "It was a draw";
         randumnumber();
-        console.log(randnum);
+
       } else if (randnum == 3) {
         compscore++;
         console.log("Comp=" + compscore);
         comscore.innerText = compscore;
         draw.innerText = "Scissor beats Paper";
         randumnumber();
-        console.log(randnum);
+ 
       } else if (randnum == 1) {
         urscore++;
         console.log("You=" + urscore);
         yourscore.innerText = urscore;
         draw.innerText = "Paper beats Rock";
         randumnumber();
-        console.log(randnum);
+
       }
   });
 
@@ -66,21 +64,20 @@ scissor.addEventListener("click", () => {
     if (randnum == 3) {
       draw.innerText = "It was a draw";
       randumnumber();
-      console.log(randnum);
+ 
     } else if (randnum == 1) {
       compscore++;
       console.log("Comp=" + compscore);
       comscore.innerText = compscore;
       draw.innerText = "Rock beats Scissor";
       randumnumber();
-      console.log(randnum);
+      
     } else if (randnum == 2) {
       urscore++;
       console.log("You=" + urscore);
       yourscore.innerText = urscore;
-      draw.innerText = "Scissor beats Paper";
+      draw.innerText = "Scissor beats Paper";      
       randumnumber();
-      console.log(randnum);
     }
 });
 
